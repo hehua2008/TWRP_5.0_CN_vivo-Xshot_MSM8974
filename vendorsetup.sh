@@ -1,0 +1,3 @@
+#add_lunch_combo cm_vivo_X710L-user
+add_lunch_combo cm_vivo_X710L-userdebug
+add_lunch_combo cm_vivo_X710L-eng
