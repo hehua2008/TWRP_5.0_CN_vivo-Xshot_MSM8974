@@ -1,6 +1,3 @@
-# inherit from the proprietary version
--include vendor/vivo/vivo_X710L/BoardConfigVendor.mk
-
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330 
@@ -71,16 +68,15 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 #TW_NO_REBOOT_BOOTLOADER := true
 #TW_NO_USB_STORAGE := true
 #TW_ALWAYS_RMRF := true
-TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_MAX_BRIGHTNESS := 160
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 120
 #TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 TW_EXCLUDE_SUPERSU := true
-#TW_INCLUDE_L_CRYPTO := true
+TW_INCLUDE_L_CRYPTO := true
 TW_INCLUDE_FB2PNG := true
-TW_USE_TOOLBOX := true
-TW_NO_SCREEN_TIMEOUT := true
+#TW_USE_TOOLBOX := true
+#TW_NO_SCREEN_TIMEOUT := true
 TW_NO_SCREEN_BLANK := true
-#TARGET_RECOVERY_QCOM_RTC_FIX := true
-#BOARD_SUPPRESS_SECURE_ERASE := true
+#TARGET_RECOVERY_QCOM_RTC_FIX := true    #ifeq ($(TARGET_CPU_VARIANT),krait)
 
 #BOARD_CUSTOM_BOOTIMG_MK := device/vivo/vivo_X710L/custombootimg.mk
